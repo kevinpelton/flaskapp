@@ -4,21 +4,19 @@ app = Flask(__name__)
 tasks = [
     {
         'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit', 
-        'done': False
+        'title': u'First Item',
+        'description': u'This is the first item'
     },
     {
         'id': 2,
-        'title': u'Learn OpenShift',
-        'description': u'Need to find a good tutorial on the web', 
-        'done': False
+        'title': u'Second Item',
+        'description': u'This is item #2'
     }
 ]
 
 @app.route('/')
 def hello_world():
-    return 'New Update for Flask in Docker'
+    return 'Hello from a simple Flask app running on OpenShift'
 
 @app.route('/tasks')
 def get_tasks():
