@@ -22,5 +22,9 @@ def hello_world():
 def get_tasks():
     return jsonify({'tasks': tasks})
 
+@app.route('/health')
+def check_health():
+    return jsonify({'status':'ok'})
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
