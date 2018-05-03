@@ -16,7 +16,7 @@ tasks = [
 
 @app.route('/')
 def hello_world():
-    return 'Hello from a simple Flask app running on OpenShift!</br> <a href="/tasks">go here to see the API</a>'
+    return 'EDITED Hello from a simple Flask app running on OpenShift!</br> <a href="/tasks">go here to see the API</a>'
 
 @app.route('/tasks')
 def get_tasks():
